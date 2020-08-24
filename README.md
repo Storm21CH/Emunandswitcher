@@ -12,7 +12,11 @@ Die Emunands und die auf SD installierten Inhalte sind alle von einander getrenn
 Das ganze funktioniert mit SXOS und Atmosphere SD Emunand/Emummc. Es funktioniert auf allen Systemsoftware Versionen (Payload), 
 weil es eine RCM App ist und ausgeführt wird bevor irgend ein CFW oder Nintendo Code folgt.
 
-![](screenshot/screen_1AEA5F90.jpg)
+![](Screenshots/screen_1AEA5F90.jpg)
+
+![](Screenshots/screen_1AEA5F90.jpg)
+
+![](Screenshots/screen_1AEA5F90.jpg)
 
 Release 1.1 Änderungen:
 
