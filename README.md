@@ -78,3 +78,7 @@ New in Emunandswitcher 2.1:
 - Set RTC time and date!!! The time of the real-time clock can be set so that the date is displayed correctly in the Emunandswitcher and hekate.
 Attention: The time in the home menu of the switch must then be adjust. Afterwards the same time and date will be shown in the RCM and switch menu!
 
+Erstellt by Storm 2019 mit Visual Studio, LittlevGL und DevKitPro, bassiert auf argonNX und hekate, Icons template von mrdude. Danke an die Programmierer! Danke auch an Gabor für LittlevGL!
+
+Created by Storm 2019 with Visual Studio, LittlevGL and DevKitPro, based on argonNX and hekate, Icons template and some code lines by @mrdude. Thanks to the programmers! Thanks also to Gabor for LittlevGL!
+
