@@ -1,0 +1,208 @@
+Emunand Switcher 2.1
+
+Vorstellung:
+
+Nach einer Idee, habe ich begonnen diese Payload App zu entwickeln. Die App ist eher für Entwickler und Tester gedacht aber wer es brauchen kann, gerne... Damit können gleichzeitig maximal drei Emunands auf der SD betrieben und mit ein paar Klicks gewechselt werden. Die Emunands und die auf SD installierten Inhalte sind alle von einander getrennt und können mit unterschiedlicher Systemsoftware Versionen upgedatet werden.
+
+Das ganze funktioniert mit SXOS und Atmosphere SD Emunand/Emummc. Es funktioniert auf allen Systemsoftware Versionen (Payload), weil es eine RCM App ist und ausgeführt wird bevor irgend ein CFW oder Nintendo Code folgt.
+
+
+Release 2.1 Änderungen:
+
+- Neuaufbau des Tools Tabs, da zusätzliche Funktionen
+
+- CPU Temperatur Anzeige
+
+- Stromverbrauch in mA und Akkuspannung in V, Anzeige bei laden grün, bei entladen rot
+
+- Möglichkeit die Hellikeit des Displays per Slider einzustellen, die eingestellte Helligkeit wird gespeichert und bei neustart der App automatisch geladen.
+
+- Bearbeiten der Config.ini direkt in der App, nach einem Softwareupdate eines Emunandes kann der Text direkt vor dem booten geändert werden.
+
+- RTC Zeit und Datum setzen!!! Damit kann die Zeit der Realtimeclock eingestellt werden, damit das Datum im Emunandswitcher und hekate richtig angezeigt wird. Achtung: Die Zeit im Homemenü der Switch muss danach neu eingestellt werden. Es wird nachher im RCM und Switchmenü die selbe Zeit und Datum angezeigt!
+
+Update auf 2.1:
+
+Für Benutzer der Version 2.0, einfach die Ordner "logos" und "sys" im Emunandswitcher Ordner ersetzen.
+
+
+Release 2.0 Änderungen:
+
+- Ganz neuer GUI, mit Live aktualisierung für Theme info, installierter Emunand Anzeige, Akku-, Datum- und Zeitanzeige.
+
+- Zeit und Datum kommen von der RTC und kann falsch sein! Mit Ubuntu könnte die RTC gesetzt werden, funktioniert dann auch in Hekate richtig. Fix GMT+1h und mit Sommerzeit Umschaltung.
+
+- Emunand switcher für SXOS und Atmosphere mit den üblichen Funktionen, per Tabs umschaltbar.
+
+- Möglichkeit zum Theme löschen vor dem booten für beide CFWs unter Tools.
+
+- Update Möglichkeit für SXOS, boot.dat z.B. mit nxmtp auf die SD kopieren, dann im RCM Updaten, neu booten fertig
+
+- Payload Loader Argon kompatibel, zeigt die Payloads aus dem argon Ordner an, zwei Reihen Payloads pro Tab
+
+
+
+Installationsanleitung SXOS:
+
+Vor der Installation muss ein Emunand von SXOS erstellt sein und auch funktionieren!
+
+Die Installation sollte am PC gemacht werden, Konsole aus, SD im PC (wichtig wegen dem Emutendo Ordner, sonst gibt es Fehler) Also nicht mit NXShell oder so...
+
+1. Ordner emunandswitcher in root SD kopieren
+
+Es muss ein Emunand bereits installiert sein sxos/emunand = Emunand 1
+
+2. Gewünschtes Emunandbackup in emunandswitcher/folders sx/emutmp01 kopieren = Emunand 2
+3. Gewünschtes Emunandbackup in emunandswitcher/folders sx/emutmp02 kopieren = Emunand 3
+
+4. Emuntendo Ordner Inhalt in emunandswitcher/folders sx/emutendo01 kopieren = Emunand 2 Emutendo
+5. Emuntendo Ordner Inhalt in emunandswitcher/folders sx/emutendo02 kopieren = Emunand 3 Emutendo
+
+Optional für Themes und LayeredFS:
+
+- Titles Ordner Inhalt in emunandswitcher/folders sx/titles01 kopieren = Emunand 2 Titles
+- Titles Ordner Inhalt in emunandswitcher/folders sx/titles02 kopieren = Emunand 3 Titles
+
+Die Ordnerstruktur wird sich ändern wenn ein Emunand geswitcht wird, bitte nichts daran verändern. Die App orientiert sich an den Ordner welcher Emunand installiert ist usw. Wenn der orginal Zustand hergestellt werden soll, Emunand 1 installieren. Dann ist alles im Zustand wie nur ein Emunand installiert wäre.
+
+6. config.ini im emunandswitcher Ordner nach belieben bearbeiten: Nur den hinteren Text bearbeiten! z.B.
+ 
+Emunand 1 = Systemsoftware 6.20
+Emunand 2 = Systemsoftware 5.10
+Emunand 3 = Systemsoftware 3.00
+
+Oder 
+
+Emunand 1 = Testemunand
+Emunand 2 = Systememunand
+Emunand 3 = Was auch immer
+
+Nach einem Update eines Emunandes muss die config.ini wieder manuel bearbeitet werden.
+
+7. emunsw.nro nach switch/emunsw/emunsw.nro kopieren
+
+8. Emunandswitcher 0104449021444000.nsp nach SD root kopieren
+
+9. SD Karte wieder in Switch und SXOS booten
+
+Der Emunandswitcher "emunsw.bin" kann über ein Payload Loader wie Dongle, TegraRCM usw. gestartet werden. 
+Doch einfacher ist es:
+
+10. Um aus dem Switch Menü zu starten Emunandswitcher 0104449021444000.nsp installieren.
+
+Um aus dem Homebrew Menü zu starten, Emunandswitcher ausführen.
+
+11. Die Installation ist fertig und konfiguriert es kann losgehen...
+
+
+
+
+
+Installationsanleitung Atmosphere:
+
+Vor der Installation muss ein SD Emummc von hekate erstellt sein und auch funktionieren! Den Ordner eMMC mit gesetztem Archiv Bit am besten auf dem PC sichern. Auch den dazugehörenden Nintendo Ordner sichern.
+
+Die Installation sollte am PC gemacht werden, Konsole aus, SD im PC (wichtig wegen dem Nintendo Ordner, sonst gibt es Fehler) Also nicht mit NXShell oder so...
+
+1. Ordner emunandswitcher in root SD kopieren und Ordner emummc in root SD kopieren
+
+Es muss ein Emunand bereits installiert sein emummc/SD00 = Emunand 1
+Den vorher gesicherten Ordner eMMC nach emummc/SD00 kopieren, den Inhalt des Nintendo Ordner nach emummc/SD00/Nintendo kopieren
+
+2. Gewünschtes Emunandbackup in emunandswitcher/folders atm/emutmp01 kopieren = Emunand 2
+   Nintendo Ordner Inhalt in emunandswitcher/folders atm/emutmp01/Nintendo kopieren = Emunand 2 Nintendo
+
+3. Gewünschtes Emunandbackup in emunandswitcher/folders atm/emutmp02 kopieren = Emunand 3
+   Nintendo Ordner Inhalt in emunandswitcher/folders atm/emutmp02/Nintendo kopieren = Emunand 3 Nintendo
+
+4. Titles Ordner Inhalt in emunandswitcher/folders atm/titles01 kopieren = Emunand 2 Titles
+5. Titles Ordner Inhalt in emunandswitcher/folders atm/titles02 kopieren = Emunand 3 Titles
+
+
+Die Ordnerstruktur wird sich ändern wenn ein Emunand geswitcht wird, bitte nichts daran verändern. Die App orientiert sich an den Ordner welcher Emunand installiert ist usw. Wenn der orginal Zustand hergestellt werden soll, Emunand 1 installieren. Dann ist alles im Zustand wie nur ein Emunand installiert wäre.
+
+6. config.ini im emunandswitcher Ordner nach belieben bearbeiten: Nur den hinteren Text bearbeiten! z.B.
+ 
+Emuemmc 1 = Systemsoftware 3.00 ATM
+Emuemmc 2 = Systemsoftware Test
+Emuemmc 3 = Systemsoftware XXX ATM
+
+
+Nach einem Update eines Emunandes muss die config.ini wieder manuel bearbeitet werden.
+
+7. emunsw.nro nach switch/emunsw/emunsw.nro kopieren
+
+8. Emunandswitcher 0104449021444000.nsp nach SD root kopieren
+
+9. SD Karte wieder in Switch und Atmosphere booten
+
+Der Emunandswitcher "emunsw.bin" kann über ein Payload Loader wie Dongle, TegraRCM usw. gestartet werden. 
+Doch einfacher ist es:
+
+10. Um aus dem Switch Menü zu starten Emunandswitcher 0104449021444000.nsp installieren.
+
+Um aus dem Homebrew Menü zu starten, Emunandswitcher ausführen.
+
+11. Die Installation ist fertig und konfiguriert es kann losgehen...
+
+Achtung: Wenn die Atmosphere CFW Version geändert wird (Neue SD Files) muss auch der fusee-primary.bin Payload im Ordner emunandswitcher/payloads durch den neuen ersetzt werden. Auch die Dateien in den Titles Ordnern müssen durch die neuen ersetzt werden. Sonst startet Atmosphere nicht mehr.
+
+
+
+Benutzung:
+
+Den Emunandswitcher über die gewünschte Methode starten: Über NRO im Homebrew Menu starten, oder NSP im Switch Menu starten, oder den Payload senden. Auf der Switch gewünschte CFW auswählen.
+
+Die App informiert live ob ein Theme installiert ist. Wird ein Theme gelöscht, wird das erkannt und angezeigt. Um den Starterror zu vermeiden wenn ein Systemsoftware Update gemacht wurde, muss das Theme gelöscht werden. (Theme del unter Tools)
+Die Themes und andere LayeredFS Dateien im Titles Ordner werden beim wechsel eines Emunandes mitverschoben, sind also jeweils an den installierten Emunand gebunden.
+
+Gewünschter Tab auswählen...
+
+Unter "Start CFW" wird der zurzeit aktive Emunand angezeit aus config.ini.
+Bei "Emunand 1 - 3" wird die Eingabe in der config.ini angezeigt.
+
+Um einen Emunand zu wechseln einfach auf das gewünschte Icon drücken. Die App informiert immer was gemacht wird oder wenn etwas nicht stimmen sollte. Es wird nichts geändert solange die Bedingungen nicht stimmen!
+
+Achtung: Bei SXOS werden nur boot0.bin, boot1.bin und full.00.bin überprüft weil es verschiedene grössen eines Emunandes geben kann. Bei Atmosphere wird geprüft ob der Ordner eMMC vorhanden ist.
+
+Nach dem Wechsel wird unter "Start CFW" der gewechselte Emunand angezeigt. Mit dem CFW Icon starten, die CFW wird mit dem gewechselten Emunand gestartet.
+
+Bei jedem gewünschten Wechsel diese Schritte wiederholen.
+Um den orginal Zustand herzustellen einfach den Emunand 1 installieren und CFW starten.
+
+
+Tools:
+
+Power Tools: Möglichkeit für RCM Reboot, Power off oder Reboot OFW
+
+Helligkeit kann mit dem Slider eingestellt werden, die Helligkeit wird automatisch gespeichert und der Wert wird beim starten der App automatisch geladen.
+
+
+Konfigurations Tools:
+
+Config.ini bearbeiten, Fenster öffnen, gewünschte Text Zeile auswählen und bearbeiten wie oben beschrieben. Mit dem Disk Symbol wird gespeichert, Fenster mit x beenden.
+Info: Nur der aktuell installierte Emunand wird im Menü sofort aktualisiert, die anderen Texte werden erst nach einem Neustart der App angezeigt.
+
+RTC Zeit und Datum, Fenster öffnen, Tastatur auf Zahlen umschalten, gewünschter Eintrag ändern. Mit dem Disk Symbol wird gespeichert, Fenster mit x beenden. Format der Zeit und Datum: HH:MM, TT.MM.JJJJ z.B. 15:06, 01.08.2019, also bei einstelligen Zahlen immer mit 0 füllen.
+
+Info = Info
+
+System Tools:
+
+Delete Theme SX / ATM, löscht das Theme des aktuell installierten Emunandes
+
+Update SXOS:
+
+- boot.dat z.B. mit nxmtp nach emunandswitcher/updateSX kopieren
+- Emunandswitcher starten, unter Tools auf Update SXOS drücken
+- CFW neu starten über SXOS Icon oder über Payload Tab, wenn Argon vorhanden ist
+- fertig!
+
+
+
+
+Infos:
+
+Die Benutzung ist wie immer auf eigene Gefahr! Ich bin nicht verantwortlich wenn eure SD Karte defekt ist, eure Switch explodiert oder der Mond auf die Erde fällt! Das kann beim Benutzen jeder Homebrew und auch Orginal Software passieren... Die Tests waren sehr erfolgreich und es sollten alle Fehler behoben sein.
+
+Erstellt by Storm 2019 mit Visual Studio, LittlevGL und DevKitPro, bassiert auf argonNX und hekate, Icons template von mrdude. Danke an die Programmierer! Danke auch an Gabor für LittlevGL!

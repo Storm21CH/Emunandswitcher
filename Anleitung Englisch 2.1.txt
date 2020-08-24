@@ -1,0 +1,206 @@
+Emunand Switcher 2.0
+
+Introduction:
+
+After an idea, I started to develop this payload app. The app is rather for developers and testers thought but who can use it, with pleasure... This can simultaneously operate a maximum of three Emunands on the SD card per CFW and be changed with a few clicks. The Emunands and the content installed on SD are all separate and can be updated with different system software versions.
+
+At the moment this is for SXOS and Atmosphere SD Emunand/Emummc. It works on all system software versions (payload) because it is an RCM app and will run before any CFW or Nintendo code follows.
+
+
+New in Emunandswitcher 2.1:
+
+- Reconstruction of the Tools tab because of additional functions
+
+- CPU temperature display
+
+- Current consumption in mA and battery voltage in V, display green when charging, red when discharging
+
+- Possibility to adjust the brightness of the display using the slider, the set brightness is saved and automatically loaded when the app is restarted.
+
+- Edit the Config.ini directly in the app, after a software update of an Emunand the text can be changed directly before booting.
+
+- Set RTC time and date!!! The time of the real-time clock can be set so that the date is displayed correctly in the Emunandswitcher and hekate. Attention: The time in the home menu of the switch must then be adjust. Afterwards the same time and date will be shown in the RCM and switch menu!
+
+
+Update to 2.1:
+
+For users of version 2.0, simply replace the "logos" and "sys" folders in the Emunandswitcher folder.
+
+
+Release 2.0 changes:
+
+- Completely new GUI, with live update for theme info, installed emunand display, battery, date and time display.
+
+- Time and date come from the RTC and can be wrong! With Ubuntu the RTC could be set, works then also in Hekate correctly. Fix GMT + 1h and with summer time switching.
+
+- Emunand switcher for SXOS and Atmosphere with the usual functions, switchable via tabs.
+
+- Ability to delete theme before booting for both CFWs under Tools.
+
+- Update possibility for SXOS, copy boot.dat e.g. with nxmtp on the SD, then in the RCM update, reboot
+
+- Payload Loader Argon compatible, displays the payloads from the argon folder, two rows of payloads per tab
+
+
+Installation guide SXOS:
+
+Before installation, an Emunand must be created by SXOS and also work!
+
+The installation should be made on the PC, console off, SD in the PC (important because of the Emutendo folder, otherwise there are errors) So not with NXShell or something ...
+
+1. Copy folder emunandswitcher to root SD
+
+An Emunand must already be installed sxos/emunand = Emunand 1
+
+2. Copy desired Emunandbackup into emunandswitcher/folders sx/emutmp01 = Emunand 2
+3. Copy desired emunandbackup into emunandswitcher/folders sx/emutmp02 = Emunand 3
+
+4. Copy Emuntendo folder content in emunandswitcher/folders sx/emutendo01 = Emunand 2 Emutendo
+5. Copy Emuntendo folder content in emunandswitcher/folders sx/emutendo02 = Emunand 3 Emutendo
+
+Optional for Themes and LayeredFS:
+
+- Copy titles folder content in emunandswitcher/folders sx/titles01 = Emunand 2 Titles
+- Copy titles folder content in emunandswitcher/folders sx/titles02 = Emunand 3 Titles
+
+The folder structure will change if an emunand is being switched, please do not change it. The app orientate on the folder which Emunand is installed, etc. If the original state is to be established, install Emunand 1. Then everything is in the state as only one Emunand would be installed.
+
+6. Edit config.ini in the emunandswitcher folder as you like: Edit only the back text! e.g.
+ 
+Emunand 1 = System software 6.20
+Emunand 2 = System software 5.10
+Emunand 3 = System software 3.00
+
+Or
+
+Emunand 1 = Testemunand
+Emunand 2 = Systememunand
+Emunand 3 = Whatever
+
+After an update of an emunand the config.ini has to be edited again manually.
+
+7. Copy emunsw.nro to switch/emunsw/emunsw.nro
+
+8. Copy emunandswitcher 0104449021444000.nsp to SD root
+
+9. SD card back into Switch and boot SXOS
+
+The Emunandswitcher "emunsw.bin" can be started via a Payload Loader like Dongle, TegraRCM etc.
+But it is simpler:
+
+10. To start from the Switch menu, install Emunandswitcher 0104449021444000.nsp.
+
+To start from the homebrew menu run Emunandswitcher there.
+
+11. The installation is done and configured you can start ...
+
+
+
+Installation guide Atmosphere:
+
+Before installation, an SD Emummc must be created by hekate and also work! It is best to save the eMMC folder with the archive bit set on the PC. Also secure the associated Nintendo folder.
+
+The installation should be made on the PC, console off, SD in the PC (important because of the Nintendo folder, otherwise there are errors) So not with NXShell or something ...
+
+1. Copy folder emunandswitcher in root SD and copy folder emummc in root SD
+
+An Emunand must already be installed emummc/SD00 = Emunand 1
+Copy the previously saved folder eMMC to emummc/SD00, copy the contents of the Nintendo folder to emummc/SD00/Nintendo
+
+2. Copy desired Emunandbackup to emunandswitcher/folders atm/emutmp01 = Emunand 2
+   Copy Nintendo folder content in emunandswitcher/folders atm/emutmp01/Nintendo = Emunand 2 Nintendo
+
+3. Copy desired Emunandbackup to emunandswitcher/folders atm/emutmp02 = Emunand 3
+   Copy Nintendo folder content in emunandswitcher/folders atm/emutmp02/Nintendo = Emunand 3 Nintendo
+
+4. Copy titles folder content in emunandswitcher/folders atm/titles01 copy = Emunand 2 Titles
+5. Copy titles folder content in emunandswitcher/folders atm/titles02 copy = Emunand 3 Titles
+
+The folder structure will change if an emunand is being switched, please do not change it. The app is based on the folder which Emunand is installed, etc. If the original state is to be established, install Emunand 1. Then everything is in the state as only one Emunand would be installed.
+
+6. edit config.ini in the emunandswitcher folder as you like: edit only the back text! e.g.
+ 
+Emuemmc 1 = Systemsoftware 3.00 ATM
+Emuemmc 2 = Systemsoftware test
+Emuemmc 3 = Systemsoftware XXX ATM
+
+
+After an update of an emunand the config.ini has to be edited again manually.
+
+7. Copy emunsw.nro to switch/emunsw/emunsw.nro
+
+8. Copy emunandswitcher 0104449021444000.nsp to SD root
+
+9. SD card back into Switch and boot Atmosphere
+
+The Emunandswitcher "emunsw.bin" can be started via a Payload Loader like Dongle, TegraRCM etc.
+But it is simpler:
+
+10. To start from the Switch menu, install Emunandswitcher 0104449021444000.nsp.
+
+To start from the homebrew menu, run Emunandswitcher.
+
+11. The installation is done and configured you can start ...
+
+Note: If the Atmosphere CFW version is changed (New SD Files), the fusee-primary.bin payload in the emunandswitcher/payloads folder must also be replaced with the new one. Also the files in the titles folders must be replaced by the new ones. Otherwise Atmosphere will not start anymore.
+
+
+
+
+
+Use:
+
+Start the Emunandswitcher via the desired method: Start via NRO in the Homebrew menu, or start NSP in the Switch Menu, or send the payload. Select the desired CFW on the switch.
+
+The app informs live if a theme is installed. If a theme is deleted, it will be recognized and displayed. To avoid the startup error when a system software update was made, the theme must be deleted. (Theme del under Tools)
+The Themes and other LayeredFS files in the titles folder are moved when changing an Emunand, so are each bound to the installed Emunand.
+
+Select desired tab ...
+
+Under "Start CFW", the currently active emunand is being updated from config.ini.
+"Emunand 1 - 3" displays the input in the config.ini.
+
+To change an Emunand simply press on the desired icon. The app always informs what is done or if something should be wrong. Nothing is changed as long as the conditions are not right!
+
+Attention: With SXOS only boot0.bin, boot1.bin and full.00.bin are checked because there can be different sizes of an emunand. Atmosphere checks if the folder eMMC exists.
+
+After the change, the changed emunand is displayed under "Start CFW". Start with the CFW icon, the CFW will start with the changed Emunand.
+
+Repeat these steps for every change you want.
+To make the original state just install Emunand 1 and start CFW.
+
+
+Tools:
+
+Power Tools: Option for RCM Reboot, Power off or Reboot OFW
+
+Brightness can be adjusted with the slider, the brightness is saved automatically and the value is loaded automatically when the app is started.
+
+
+Configuration Tools:
+
+Edit Config.ini, open the window, select the desired text line and edit as described above. The disk symbol is used to save, exit the window with x.
+Info: Only the currently installed Emunand is updated in the menu immediately, the other texts are only displayed after restarting the app.
+
+RTC time and date, open window, switch keyboard to numbers, change desired entry. The disk symbol is used to save, exit the window with x. Format of time and date: HH:MM, DD.MM.YYYY e.g. 15:06, 01.08.2019, always fill with 0 for single-digit numbers.
+
+Info = Info
+
+
+System Tools:
+
+Delete Theme SX / ATM, deletes the theme of the currently installed Emunand
+
+Update SXOS:
+
+- Copy boot.dat e.g. with nxmtp to folder emunandswitcher/updateSX
+- Start Emunandswitcher, under Tools click on Update SXOS
+- Restart CFW via SXOS Icon or via Payload Tab if Argon is present
+- finished!
+
+
+Info:
+
+The use is as always at your own risk! I'm not responsible if your SD card is broken, your switch explodes or the moon falls to earth! This can happen when using any homebrew and also original software ... The tests were very successful and all bugs should be fixed.
+
+Created by Storm 2019 with Visual Studio, LittlevGL and DevKitPro, based on argonNX and hekate, Icons template and some code lines by @mrdude. Thanks to the programmers! Thanks also to Gabor for LittlevGL!
