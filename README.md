@@ -16,7 +16,7 @@ weil es eine RCM App ist und ausgeführt wird bevor irgend ein CFW oder Nintendo
 
 ![](Screenshots/screen_174B0AA1.jpg)
 
-![](Screenshots/screen_1AEA5F90.jpg)
+![](Screenshots/screen_1B52025A.jpg)
 
 Release 1.1 Änderungen:
 
