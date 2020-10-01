@@ -755,7 +755,7 @@ static void update_status(lv_task_t* status)
 
 
 	//Funktion Theme info ATM
-	if (f_stat("atmosphere/titles/0100000000001000", NULL)) {
+	if (f_stat("atmosphere/contents/0100000000001000", NULL)) {
 
 		static lv_style_t bg;//Definiton Text Box
 		lv_style_copy(&bg, &lv_style_pretty);
@@ -788,7 +788,7 @@ static bool render_title(argon_ctxt_t * ctxt)//Title und Akku, Zeit, Datum, Stro
 	//Title Erstellen
     lv_obj_t* title = lv_label_create(lv_scr_act(), NULL);
     lv_obj_align(title, lv_scr_act(), LV_ALIGN_IN_TOP_LEFT, 15, 620);
-	lv_label_set_text(title, "Emunand Switcher v2.1");
+	lv_label_set_text(title, "Emunand Switcher v2.11");
     lv_obj_set_auto_realign(title, true);
     
     static lv_style_t label_style;

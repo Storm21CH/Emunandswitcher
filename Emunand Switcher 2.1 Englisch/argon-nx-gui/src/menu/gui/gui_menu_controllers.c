@@ -87,7 +87,7 @@ void ctrl_info(lv_obj_t* obj, lv_event_t event)
 		lv_obj_set_top(mbox, true);
 		lv_obj_set_auto_realign(mbox, true);
 		lv_obj_align(mbox, NULL, LV_ALIGN_IN_TOP_RIGHT, 5, 5);
-		lv_mbox_set_text(mbox, "Emunandswitcher Version 2.1 by Storm 2019\ncreated with Visual Studio and LittlevGL\npartially based on ArgonNX und Hekate\nIcon templates from mrdude\nThanks to the programmers!");
+		lv_mbox_set_text(mbox, "Emunandswitcher Version 2.11 by Storm 2020\ncreated with Visual Studio and LittlevGL\npartially based on ArgonNX und Hekate\nIcon templates from mrdude\nThanks to the programmers!");
 		lv_mbox_set_style(mbox, LV_MBOX_STYLE_BG, &bg);
 		lv_mbox_start_auto_close(mbox, 12000);
 	}
@@ -150,7 +150,7 @@ void ctrl_themedelATM(lv_obj_t* obj, lv_event_t event)
 	if (event == LV_EVENT_CLICKED)
 	{
 
-		if (f_stat("atmosphere/titles/0100000000001000", NULL)) {
+		if (f_stat("atmosphere/contents/0100000000001000", NULL)) {
 
 			static lv_style_t bg;
 			lv_style_copy(&bg, &lv_style_pretty);
@@ -170,9 +170,9 @@ void ctrl_themedelATM(lv_obj_t* obj, lv_event_t event)
 
 		else { // if the directory exists - do this.
 
-			f_unlink("atmosphere/titles/0100000000001000");
-			f_unlink("atmosphere/titles/0100000000001007");
-			f_unlink("atmosphere/titles/0100000000001013");
+			f_unlink("atmosphere/contents/0100000000001000");
+			f_unlink("atmosphere/contents/0100000000001007");
+			f_unlink("atmosphere/contents/0100000000001013");
 
 			static lv_style_t bg;
 			lv_style_copy(&bg, &lv_style_pretty);
@@ -1245,8 +1245,10 @@ void ctrl_emmc1(lv_obj_t* obj, lv_event_t event)//Emummc1 Button Funktion
 				f_rename("emunandswitcher/folders atm/emutmp00", "emummc/SD00");
 				//f_rename("emummc/SD00/Nintendo", "emunandswitcher/folders atm/emutendo02");
 				//f_rename("emunandswitcher/folders atm/emutendo00", "emummc/SD00/Nintendo");
-				f_rename("atmosphere/titles", "emunandswitcher/folders atm/titles02");
-				f_rename("emunandswitcher/folders atm/titles00", "atmosphere/titles");
+				//f_rename("atmosphere/titles", "emunandswitcher/folders atm/titles02");
+				//f_rename("emunandswitcher/folders atm/titles00", "atmosphere/titles");
+				f_rename("atmosphere/contents", "emunandswitcher/folders atm/contents02");
+				f_rename("emunandswitcher/folders atm/contents00", "atmosphere/contents");
 
 				mbox = lv_mbox_create(lv_layer_top(), NULL);
 				lv_mbox_set_recolor(mbox, true);
@@ -1320,8 +1322,8 @@ void ctrl_emmc1(lv_obj_t* obj, lv_event_t event)//Emummc1 Button Funktion
 				f_rename("emunandswitcher/folders atm/emutmp00", "emummc/SD00");
 				//f_rename("emummc/SD00/Nintendo", "emunandswitcher/folders atm/emutendo01");
 				//f_rename("emunandswitcher/folders atm/emutendo00", "emummc/SD00/Nintendo"); 
-				f_rename("atmosphere/titles", "emunandswitcher/folders atm/titles01");
-				f_rename("emunandswitcher/folders atm/titles00", "atmosphere/titles");
+				f_rename("atmosphere/contents", "emunandswitcher/folders atm/contents01");
+				f_rename("emunandswitcher/folders atm/contents00", "atmosphere/contents");
 
 				mbox = lv_mbox_create(lv_layer_top(), NULL);
 				lv_mbox_set_recolor(mbox, true);
@@ -1446,8 +1448,8 @@ void ctrl_emmc2(lv_obj_t* obj, lv_event_t event)//Emummc2 Button Funktion
 				f_rename("emunandswitcher/folders atm/emutmp01", "emummc/SD00");
 				//f_rename("emummc/SD00/Nintendo", "emunandswitcher/folders atm/emutendo02");
 				//f_rename("emunandswitcher/folders atm/emutendo01", "emummc/SD00/Nintendo");
-				f_rename("atmosphere/titles", "emunandswitcher/folders atm/titles02");
-				f_rename("emunandswitcher/folders atm/titles01", "atmosphere/titles");
+				f_rename("atmosphere/contents", "emunandswitcher/folders atm/contents02");
+				f_rename("emunandswitcher/folders atm/contents01", "atmosphere/contents");
 
 				mbox = lv_mbox_create(lv_layer_top(), NULL);
 				lv_mbox_set_recolor(mbox, true);
@@ -1521,8 +1523,8 @@ void ctrl_emmc2(lv_obj_t* obj, lv_event_t event)//Emummc2 Button Funktion
 				f_rename("emunandswitcher/folders atm/emutmp01", "emummc/SD00");
 				//f_rename("emummc/SD00/Nintendo", "emunandswitcher/folders atm/emutendo00");
 				//f_rename("emunandswitcher/folders atm/emutendo01", "emummc/SD00/Nintendo"); 
-				f_rename("atmosphere/titles", "emunandswitcher/folders atm/titles00");
-				f_rename("emunandswitcher/folders atm/titles01", "atmosphere/titles");
+				f_rename("atmosphere/contents", "emunandswitcher/folders atm/contents00");
+				f_rename("emunandswitcher/folders atm/contents01", "atmosphere/contents");
 
 				mbox = lv_mbox_create(lv_layer_top(), NULL);
 				lv_mbox_set_recolor(mbox, true);
@@ -1644,8 +1646,8 @@ void ctrl_emmc3(lv_obj_t* obj, lv_event_t event)//Emummc3 Button Funktion
 				f_rename("emunandswitcher/folders atm/emutmp02", "emummc/SD00");
 				//f_rename("emummc/SD00/Nintendo", "emunandswitcher/folders atm/emutendo01");
 				//f_rename("emunandswitcher/folders atm/emutendo02", "emummc/SD00/Nintendo");
-				f_rename("atmosphere/titles", "emunandswitcher/folders atm/titles01");
-				f_rename("emunandswitcher/folders atm/titles02", "atmosphere/titles");
+				f_rename("atmosphere/contents", "emunandswitcher/folders atm/contents01");
+				f_rename("emunandswitcher/folders atm/contents02", "atmosphere/contents");
 
 				mbox = lv_mbox_create(lv_layer_top(), NULL);
 				lv_mbox_set_recolor(mbox, true);
@@ -1717,8 +1719,8 @@ void ctrl_emmc3(lv_obj_t* obj, lv_event_t event)//Emummc3 Button Funktion
 				f_rename("emunandswitcher/folders atm/emutmp02", "emummc/SD00");
 				//f_rename("emummc/SD00/Nintendo", "emunandswitcher/folders atm/emutendo00");
 				//f_rename("emunandswitcher/folders atm/emutendo02", "emummc/SD00/Nintendo");
-				f_rename("atmosphere/titles", "emunandswitcher/folders atm/titles00");
-				f_rename("emunandswitcher/folders atm/titles02", "atmosphere/titles");
+				f_rename("atmosphere/contents", "emunandswitcher/folders atm/contents00");
+				f_rename("emunandswitcher/folders atm/contents02", "atmosphere/contents");
 
 				mbox = lv_mbox_create(lv_layer_top(), NULL);
 				lv_mbox_set_recolor(mbox, true);
@@ -1808,6 +1810,11 @@ void ctrl_confini(lv_obj_t* obj, lv_event_t event)//Button Funktion edit Config.
 		win_style.body.padding.bottom = 0;
 		win_style.body.padding.inner = LV_DPI / 6;
 		win_style.body.opa = LV_OPA_80;
+
+		//Definition Transparentes Label jeweils bei Label hinzufügen: lv_obj_set_style(label, &inv_label);
+		static lv_style_t inv_label;
+		lv_style_copy(&inv_label, &lv_style_transp);
+		inv_label.text.font = NULL;
 		
 		//Create a window to hold all the objects, bei lv_layer_top() ist das Fenster nicht volle Bildgrösse, mit lv_scr_act() ok
 		lv_obj_t* win = lv_win_create(lv_scr_act(), NULL);//lv_obj_t* win = lv_win_create(lv_disp_get_scr_act(NULL), NULL);//In lc_conf.h aktivieren	
@@ -1820,6 +1827,14 @@ void ctrl_confini(lv_obj_t* obj, lv_event_t event)//Button Funktion edit Config.
 		lv_obj_t* close_btn = lv_win_add_btn(win, LV_SYMBOL_CLOSE);//Add close button and use built-in close action
 		lv_obj_set_event_cb(close_btn, lv_win_close_event_cb);
 		lv_obj_set_style(close_btn, LV_LABEL_STYLE_MAIN);//Style Farbe close button
+
+		lv_obj_t* reload_btn = lv_win_add_btn(win, LV_SYMBOL_REFRESH);//Reload button im Header nur Symbol möglich
+		lv_obj_set_event_cb(reload_btn, ctrl_lauch_payload);
+		lv_obj_set_style(reload_btn, LV_LABEL_STYLE_MAIN);//Style Farbe Reload button
+
+		lv_obj_t* label = lv_label_create(reload_btn, NULL);//Fake Label unsichtbar für Payload
+		lv_label_set_text(label, "emunandswitcher/emunsw.bin");
+		lv_obj_set_style(label, &inv_label);//Unsichtbares Label
 
 		lv_obj_t* save_btn = lv_win_add_btn(win, LV_SYMBOL_SAVE);//Save button im Header nur Symbol möglich
 		lv_obj_set_event_cb(save_btn, ctrl_confinisave);
