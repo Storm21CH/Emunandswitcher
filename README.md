@@ -12,11 +12,15 @@ Die Emunands und die auf SD installierten Inhalte sind alle von einander getrenn
 Das ganze funktioniert mit SXOS und Atmosphere SD Emunand/Emummc. Es funktioniert auf allen Systemsoftware Versionen (Payload), 
 weil es eine RCM App ist und ausgeführt wird bevor irgend ein CFW oder Nintendo Code folgt.
 
-![](Screenshots/screen_1AEA5F90.jpg)
+![](screenshots/scr20210325_105032.jpg)
 
-![](Screenshots/screen_174B0AA1.jpg)
+![](screenshots/scr20210321_161207.jpg)
 
-![](Screenshots/screen_1B52025A.jpg)
+![](screenshots/scr20210321_161031.jpg)
+
+![](screenshots/scr20210321_161104.jpg)
+
+![](screenshots/scr20210321_161128.jpg)
 
 Release 1.1 Änderungen:
 
@@ -84,7 +88,48 @@ New in Emunandswitcher 2.1:
 - Set RTC time and date!!! The time of the real-time clock can be set so that the date is displayed correctly in the Emunandswitcher and hekate.
 Attention: The time in the home menu of the switch must then be adjust. Afterwards the same time and date will be shown in the RCM and switch menu!
 
-Erstellt by Storm 2019 mit Visual Studio, LittlevGL und DevKitPro, bassiert auf argonNX und hekate, Icons template von mrdude. Danke an die Programmierer! Danke auch an Gabor für LittlevGL!
+New Features 3.0:
 
-Created by Storm 2019 with Visual Studio, LittlevGL and DevKitPro, based on argonNX and hekate, Icons template and some code lines by @mrdude. Thanks to the programmers! Thanks also to Gabor for LittlevGL!
+- Build with newest hekate HW Libs
+- Mariko Support
+- Joycon Mouse
+- UMS SD Card
+- Hardware info Page
+- Reload Menu
+- Added Filemanager for Argon and Emunandswitcher
+- Added Reboot Menu with Power Button
+- Forwarder and Reboot to Payload files fixed for Atmosphere 19+
+- Partition or SD Files Switcher*
+
+Key assignment usage Filemanager:
+- Touch screen as usual
+- Joycon Mouse, A = Enter folder / Choose Buttons, B = Back Folder, X = Close Window
+- Joypad up / down Filelist navigation, A = Enter folder, B = Back Folder, X = Close Window
+
+*If SD files works (emummc.ini of SD files is in the folder "emummc"), the emummc.ini of a partition emummcs can be copied / renamed to "emunandswitcher/folders atm/emummc/emummc_part.ini". You can now switch between partition and SD files... The contents are temporarily in "emunandswitcher/folders atm/contentsPA" for partition or "emunandswitcher/folders atm/contentsSD" for SD files. 
+
+Neue Funktionen 3.0:
+
+- Build with newest hekate HW Libs
+- Mariko Support
+- Joycon Mouse
+- UMS SD Card
+- Hardware info Page
+- Reload Menü Funktion
+- Filemanager für Argon und Emunandswitcher hinzugefügt
+- Reboot Menü mit Power Button hinzugefügt
+- Forwarder und Reboot to Payload files fixed für Atmosphere 19+
+- Partition oder SD Files Schalter*
+
+Tastenbelegung Bedienung Filemanager:
+- Touch screen wie gewohnt
+- Joycon Mouse, A = Eingang Ordner / Button wählen, B = Ordner zurück, X = Fenster schliessen
+- Joypad up / down Dateiliste navigation, A = Eingang Ordner, B = Ordner zurück, X = Fenster schliessen
+
+*Wenn SD Files funktioniert (emummc.ini von SD Files ist in Ordner "emummc") kann die emummc.ini eines Partitions emummcs nach "emunandswitcher/folders atm/emummc/emummc_part.ini" kopiert / umbenannt werden. Es kann nun zwischen Partition und SD Files umgeschaltet werden... Die Contents sind jeweils in "emunandswitcher/folders atm/contentsPA" für Partition oder  "emunandswitcher/folders atm/contentsSD" für SD Files temporär.
+
+
+Erstellt by Storm 2019 - 2021 mit Visual Studio, LittlevGL und DevKitPro, bassiert auf argonNX und hekate, Icons template von mrdude. Danke an die Programmierer! Danke auch an Gabor für LittlevGL!
+
+Created by Storm 2019 - 2021 with Visual Studio, LittlevGL and DevKitPro, based on argonNX and hekate, Icons template and some code lines by @mrdude. Thanks to the programmers! Thanks also to Gabor for LittlevGL!
 
