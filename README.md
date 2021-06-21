@@ -1,6 +1,8 @@
 # Emunandswitcher
 SXOS and Atmosphere SD Files Emunand/Emummc Switcher and Multitool
 
+![Downloads](https://img.shields.io/github/downloads/Storm21CH/Emunandswitcher/total)
+
 Fork from: https://github.com/Guillem96/argon-nx
 
 Vorstellung:
