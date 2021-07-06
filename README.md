@@ -131,6 +131,21 @@ Tastenbelegung Bedienung Filemanager:
 *Wenn SD Files funktioniert (emummc.ini von SD Files ist in Ordner "emummc") kann die emummc.ini eines Partitions emummcs nach "emunandswitcher/folders atm/emummc/emummc_part.ini" kopiert / umbenannt werden. Es kann nun zwischen Partition und SD Files umgeschaltet werden... Die Contents sind jeweils in "emunandswitcher/folders atm/contentsPA" für Partition oder  "emunandswitcher/folders atm/contentsSD" für SD Files temporär.
 
 
+New Features 3.1:
+
+- Build with newest hekate HW Libs 5.5.7
+- ATM Tab first
+- Some Buttons Theme fix
+- Fixed a Error after autoclosing a window with X Button (Close Filemanager and other Windows)
+
+Neue Funktionen 3.1:
+
+- Build with newest hekate HW Libs 5.5.7
+- ATM Tab zuerst
+- Bei ein paar Buttons Theme gefixt
+- Ein Fehler wurde behoben nach dem autoschliessen eines Fensters mit dem X Button (Filemanager beenden und andere Fenster)
+
+
 Erstellt by Storm 2019 - 2021 mit Visual Studio, LittlevGL und DevKitPro, bassiert auf argonNX und hekate, Icons template von mrdude. Danke an die Programmierer! Danke auch an Gabor für LittlevGL!
 
 Created by Storm 2019 - 2021 with Visual Studio, LittlevGL and DevKitPro, based on argonNX and hekate, Icons template and some code lines by @mrdude. Thanks to the programmers! Thanks also to Gabor for LittlevGL!
