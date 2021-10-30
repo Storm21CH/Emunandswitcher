@@ -146,6 +146,22 @@ Neue Funktionen 3.1:
 - Ein Fehler wurde behoben nach dem autoschliessen eines Fensters mit dem X Button (Filemanager beenden und andere Fenster)
 
 
+New Features 3.2:
+
+- Typo fixed
+- Tools Tab: Choose language switch added Deutsch / Englisch
+- Selected language is saved in lang.ini GER / ENG
+- Update zu v 3.2
+
+Neue Funktionen 3.2:
+
+- Typo gefixt
+- Tools Tab: Sprachauswahl Schalter hinzugefügt Deutsch / Englisch
+- Gewählte Sprache wird gespeichert in lang.ini GER / ENG
+- Update zu v 3.2
+
+
+
 Erstellt by Storm 2019 - 2021 mit Visual Studio, LittlevGL und DevKitPro, bassiert auf argonNX und hekate, Icons template von mrdude. Danke an die Programmierer! Danke auch an Gabor für LittlevGL!
 
 Created by Storm 2019 - 2021 with Visual Studio, LittlevGL and DevKitPro, based on argonNX and hekate, Icons template and some code lines by @mrdude. Thanks to the programmers! Thanks also to Gabor for LittlevGL!
