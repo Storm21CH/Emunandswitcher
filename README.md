@@ -183,7 +183,7 @@ Neue Funktionen 3.3:
 - Updated zu 1.4
 - Allgemeine Fehlerbehebung und Stabilitäts Fixes
 
-Danke am @dezem und https://gbatemp.net/members/twocool4life86.591345/ für die AULA OLED Tests, ohne sie wäre diese Version nicht möglich gewesen!
+Danke an @dezem und https://gbatemp.net/members/twocool4life86.591345/ für die AULA OLED Tests, ohne sie wäre diese Version nicht möglich gewesen!
 
 
 Erstellt by Storm 2019 - 2022 mit Visual Studio, LittlevGL und DevKitPro, bassiert auf argonNX und hekate, Icons template von mrdude. Danke an die Programmierer! Danke auch an Gabor für LittlevGL!
