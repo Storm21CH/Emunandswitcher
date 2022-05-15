@@ -168,7 +168,7 @@ New Features 3.3:
 - Hardware Info Page revised
 - Payload ATM changed to fusee.bin, it is also possible with fusee-primary.bin but fusee.bin is preferred
 - Fix slider brightness value for AULA
-- Updated to 1.4
+- Updated to 3.3
 - General bug fixes and stability fixes
 
 Thanks @dezem und https://gbatemp.net/members/twocool4life86.591345/ for the AULA OLED tests, without them this version would not have been possible!
@@ -180,7 +180,7 @@ Neue Funktionen 3.3:
 - Hardware Info Page angepasst
 - Payload ATM zu fusee.bin geändert, es ist auch mit fusee-primary.bin möglich aber fusee.bin ist bevorzugt
 - Fix Slider Helligkeits Value für AULA
-- Updated zu 1.4
+- Updated zu 3.3
 - Allgemeine Fehlerbehebung und Stabilitäts Fixes
 
 Danke an @dezem und https://gbatemp.net/members/twocool4life86.591345/ für die AULA OLED Tests, ohne sie wäre diese Version nicht möglich gewesen!
