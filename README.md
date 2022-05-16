@@ -186,6 +186,29 @@ Neue Funktionen 3.3:
 Danke an @dezem und https://gbatemp.net/members/twocool4life86.591345/ für die AULA OLED Tests, ohne sie wäre diese Version nicht möglich gewesen!
 
 
+New Features 3.4:
+
+- Menu colors can now be set arbitrarily:
+- Textcolor
+- Tab Textcolor
+- Standard Payload Icon color
+
+- Updated to 3.4
+- General bug fixes and stability fixes
+
+Neue Funktionen 3.4:
+
+- Menü Farben können nun beliebig eingestellt werden:
+- Textfarbe
+- Tab Textfarbe
+- Standart Payload Icon Farbe
+
+- Update zu 3.4
+- Allgemeine Fehlerbehebung und Stabilitäts Fixes
+
+Thanks https://gbatemp.net/members/twocool4life86.591345/ for the color settings test.
+
+
 Erstellt by Storm 2019 - 2022 mit Visual Studio, LittlevGL und DevKitPro, bassiert auf argonNX und hekate, Icons template von mrdude. Danke an die Programmierer! Danke auch an Gabor für LittlevGL!
 
 Created by Storm 2019 - 2022 with Visual Studio, LittlevGL and DevKitPro, based on argonNX and hekate, Icons template and some code lines by @mrdude. Thanks to the programmers! Thanks also to Gabor for LittlevGL!
