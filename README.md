@@ -16,9 +16,13 @@ weil es eine RCM App ist und ausgeführt wird bevor irgend ein CFW oder Nintendo
 
 ![](screenshots/scr20210325_105032.jpg)
 
-![](screenshots/scr20210321_161207.jpg)
+![](screenshots/scr20220405_162612.jpg)
 
-![](screenshots/scr20210321_161031.jpg)
+![](screenshots/scr20220405_165448.jpg)
+
+![](screenshots/scr20220407_003415.jpg)
+
+![](screenshots/scr20220406_164513.jpg)
 
 ![](screenshots/scr20210321_161104.jpg)
 
