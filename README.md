@@ -213,6 +213,19 @@ Neue Funktionen 3.4:
 Thanks https://gbatemp.net/members/twocool4life86.591345/ for the color settings test.
 
 
+New Features 3.5:
+
+- File manager, copy file and folder added percentage display, autoclose info window after copying
+- Updated to 3.5
+- General bug fixes and stability fixes
+
+Neue Funktionen 3.5:
+
+- Dateimanager, Datei und Ordner kopieren Prozentanzeige hinzugefügt, autoschliessen des Infofensters nach dem kopieren
+- Update zu 3.5
+- Allgemeine Fehlerbehebung und Stabilitäts Fixes
+
+
 Erstellt by Storm 2019 - 2022 mit Visual Studio, LittlevGL und DevKitPro, bassiert auf argonNX und hekate, Icons template von mrdude. Danke an die Programmierer! Danke auch an Gabor für LittlevGL!
 
 Created by Storm 2019 - 2022 with Visual Studio, LittlevGL and DevKitPro, based on argonNX and hekate, Icons template and some code lines by @mrdude. Thanks to the programmers! Thanks also to Gabor for LittlevGL!
