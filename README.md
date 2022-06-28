@@ -14,6 +14,16 @@ Die Emunands und die auf SD installierten Inhalte sind alle von einander getrenn
 Das ganze funktioniert mit SXOS und Atmosphere SD Emunand/Emummc. Es funktioniert auf allen Systemsoftware Versionen (Payload), 
 weil es eine RCM App ist und ausgeführt wird bevor irgend ein CFW oder Nintendo Code folgt.
 
+
+Introduction:
+
+After an idea, I started to develop this payload app. The app is rather for developers and testers thought but who can use it, with pleasure...
+This can simultaneously operate a maximum of three Emunands on the SD card and be changed with a few clicks.
+The Emunands and the content installed on SD are all separate and can be updated with different system software versions.
+
+At the moment this is just for SXOS and Atmosphere SD Emunand/Emummc. It works on all system software versions (payload) because
+it is an RCM app and will run before any CFW or Nintendo code follows.
+
 ![](screenshots/scr20210325_105032.jpg)
 
 ![](screenshots/scr20220405_162612.jpg)
@@ -28,6 +38,7 @@ weil es eine RCM App ist und ausgeführt wird bevor irgend ein CFW oder Nintendo
 
 ![](screenshots/scr20210321_161128.jpg)
 
+
 Release 1.1 Änderungen:
 
 - Atmosphere SD emummc integriert
@@ -36,15 +47,6 @@ Release 1.1 Änderungen:
 - Akku Info by mrdude integriert
 - LayeredFS und Theme tauglich, Titles Ordner integriert
 - Theme Warnung und Möglichkeit Theme zu löschen integriert
-
-Introduction:
-
-After an idea, I started to develop this payload app. The app is rather for developers and testers thought but who can use it, with pleasure...
-This can simultaneously operate a maximum of three Emunands on the SD card and be changed with a few clicks.
-The Emunands and the content installed on SD are all separate and can be updated with different system software versions.
-
-At the moment this is just for SXOS and Atmosphere SD Emunand/Emummc. It works on all system software versions (payload) because
-it is an RCM app and will run before any CFW or Nintendo code follows.
 
 Release 1.1 changes:
 
