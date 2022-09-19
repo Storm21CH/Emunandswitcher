@@ -228,6 +228,19 @@ Neue Funktionen 3.5:
 - Allgemeine Fehlerbehebung und Stabilitäts Fixes
 
 
+New Features 3.6:
+
+- New feature: Ability to load a custom splash for each payload
+- The image must have a resolution of 1280x720px and format ARGB32, like background.bmp
+- The image must have the same name as the payload and be located in the "argon/payloads" folder, e.g. at fusee.bin = fusee.bmp
+
+Neue Funktionen 3.6:
+
+- Neue Funktion: Möglichkeit für jeden Payload einen benutzerdefinierten Splash zu laden
+- Das Bild muss eine Auflösung von 1280x720px und format ARGB32 besitzen, wie background.bmp
+- Das Bild muss den gleichen Namen wie der Payload haben und sich im Ordner "argon/payloads" befinden, z.B. bei fusee.bin = fusee.bmp
+
+
 Erstellt by Storm 2019 - 2022 mit Visual Studio, LittlevGL und DevKitPro, bassiert auf argonNX und hekate, Icons template von mrdude. Danke an die Programmierer! Danke auch an Gabor für LittlevGL!
 
 Created by Storm 2019 - 2022 with Visual Studio, LittlevGL and DevKitPro, based on argonNX and hekate, Icons template and some code lines by @mrdude. Thanks to the programmers! Thanks also to Gabor for LittlevGL!
