@@ -198,7 +198,6 @@ New Features 3.4:
 - Textcolor
 - Tab Textcolor
 - Standard Payload Icon color
-
 - Updated to 3.4
 - General bug fixes and stability fixes
 
@@ -208,7 +207,6 @@ Neue Funktionen 3.4:
 - Textfarbe
 - Tab Textfarbe
 - Standart Payload Icon Farbe
-
 - Update zu 3.4
 - Allgemeine Fehlerbehebung und Stabilitäts Fixes
 
@@ -239,6 +237,33 @@ Neue Funktionen 3.6:
 - Neue Funktion: Möglichkeit für jeden Payload einen benutzerdefinierten Splash zu laden
 - Das Bild muss eine Auflösung von 1280x720px und format ARGB32 besitzen, wie background.bmp
 - Das Bild muss den gleichen Namen wie der Payload haben und sich im Ordner "argon/payloads" befinden, z.B. bei fusee.bin = fusee.bmp
+
+
+New Features 3.7:
+
+- New feature: Message when a partition EmuMMC is activated and an SD EmuMMC is selected.
+
+Neue Funktionen 3.7:
+
+- Neue Funktion: Meldung wenn ein Partitions EmuMMC aktiviert ist und ein SD EmuMMC angewählt wird.
+
+
+Neue Funktionen 3.8:
+
+- bdk update auf 6.10
+- Sprachauswahl und Funktion geändert um mehr Sprachen zu haben.
+- Unicode hinzugefügt und Sonderzeichen eingefügt für mehr Sprachen.
+- Spanisch hinzugefügt by Impeeza
+- Chinesisch by Faker Dev
+
+New features 3.8:
+
+- bdk update to 6.10
+- Language selection and function changed to have more languages.
+- Added Unicode and special characters for more languages.
+- Added Spanish by Impeeza
+- Chinese by Faker Dev
+
 
 
 Erstellt by Storm 2019 - 2022 mit Visual Studio, LittlevGL und DevKitPro, bassiert auf argonNX und hekate, Icons template von mrdude. Danke an die Programmierer! Danke auch an Gabor für LittlevGL!
